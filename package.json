@@ -1,5 +1,5 @@
 {
-  "name": "quill-delta",
+  "name": "@nexteditorjs/quill-delta",
   "version": "4.2.2",
   "description": "Format for representing rich text documents and changes.",
   "author": "Jason Chen <jhchen7@gmail.com>",

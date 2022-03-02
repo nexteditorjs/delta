@@ -565,7 +565,7 @@ class Delta {
 
 export default Delta;
 
-if (typeof module === 'object') {
-  module.exports = Delta;
-  module.exports.default = Delta;
-}
+// if (typeof module === 'object') {
+//   module.exports = Delta;
+//   module.exports.default = Delta;
+// }
