@@ -35,6 +35,7 @@
   "license": "MIT",
   "scripts": {
     "build": "vite build && tsc --emitDeclarationOnly",
+    "dist": "yarn build",
     "prepare": "npm run build",
     "lint": "eslint 'src/**/*.ts'",
     "test": "npm run build; jasmine test/*.js test/**/*.js",
