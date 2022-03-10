@@ -1,14 +1,17 @@
 {
   "name": "@nexteditorjs/quill-delta",
-  "version": "4.2.2",
+  "version": "4.2.3",
   "description": "Format for representing rich text documents and changes.",
   "author": "Jason Chen <jhchen7@gmail.com>",
   "homepage": "https://github.com/quilljs/delta",
-  "main": "dist/Delta.js",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
   "dependencies": {
     "fast-diff": "1.2.0",
     "lodash.clonedeep": "^4.5.0",
-    "lodash.isequal": "^4.5.0"
+    "lodash.isequal": "^4.5.0",
+    "vite": "^2.8.6"
   },
   "devDependencies": {
     "@types/lodash.clonedeep": "^4.5.6",
@@ -31,7 +34,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
+    "build": "vite build && tsc --emitDeclarationOnly",
     "prepare": "npm run build",
     "lint": "eslint 'src/**/*.ts'",
     "test": "npm run build; jasmine test/*.js test/**/*.js",
